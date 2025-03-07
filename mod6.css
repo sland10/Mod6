@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+ background-color: purple; 
+}
+
+h1 {
+  text-align: center;
+  color:orangered
+}
+
+.shapes{
+  width:400px;  
+  float:right;
+  margin: 10px 50px 25px 50px;
+  border-radius: 5px;
+  padding: 10px;}
+
+
+         /*NAVIGATION BAR STYLING*/
+.navbar {
+  overflow: hidden;
+  background-color:orangered;
+margin: 25px 50px 10px 50px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:cadetblue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*FORM STYLING*/
+.form{
+  color:white;
+  width:400px;  
+  float:left;
+  margin: 10px 50px 25px 50px;
+  border-radius: 5px;
+  background-color:#E30B5C;
+  padding: 10px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:#BF40BF;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#953553;
+}
+
+.footer{
+  
+  clear: both;
+  text-align: center;
+}

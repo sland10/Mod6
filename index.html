@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mod6</title>
+<link rel="stylesheet" href="mod6.css">
+<style></style>
+</head>
+<header>
+  <h1>MODULE 6 ASSIGNMENT IMED 1316</h1>
+</header>
+
+<body>
+
+<!--NAVIGATION BAR-->
+<div class="navbar"> <a href="index.html">Home</a> <a href="#about">About</a> <a href="#Contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Gallery <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-content"> <a href="#">Digital</a> <a href="#">Videos</a> <a href="#">Other</a> </div>
+  </div>
+</div>
+
+<!--FORM--> 
+<div class="form"
+  
+<form action="/action_page.php">
+<label for="fname"><b>Name</b></label>
+<br>
+<input type="text" id="fname" name="firstname" placeholder="First">
+<br>
+<label for="lname"></label>
+<input type="text" id="lname" name="lastname" placeholder="Last ">
+<br>
+<label for="birthday"><b>Birthday</b></label>
+<br>
+<input type="date" id="birthday" name="birthday"
+ placeholder="Birthday">
+<br>
+<input type="submit" value="Submit">
+</div>
+
+<!--SVG SHAPE-->
+<div class="shapes">
+  <svg height="150" width="400">
+    <defs>
+      <lineargradient id="grad1">
+        <stop offset="0%" stop-color="orange" />
+        <stop offset="100%" stop-color="magenta" />
+      </lineargradient>
+    </defs>
+    <ellipse cx="100" cy="75" rx="85" ry="60" fill="url(#grad1)" />
+    <text fill="purple" font-size="45" font-family="Verdana" x="40" y="88">Hello!</text>
+  </svg>
+  
+  <!--CANVAS ShAPE-->
+  <canvas id="myCanvas" width="150" height="150" style="border:1px solid rgba(255,63,0,1.00);"> </canvas>
+  <script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(75, 75, 70, 0, 2 * Math.PI);
+ctx.fillStyle = "#FF7F50";
+ctx.fill();
+ctx.lineWidth = 10;
+ctx.strokeStyle = "magenta";
+ctx.stroke();
+</script> 
+    </div>
+</body>
+
+<footer class="footer">
+  <audio controls autoplay>
+    <source src="../birdeportfolio/resources/funnysound.mp3" type="audio/mpeg">
+  </audio>
+</footer>
+</html>
